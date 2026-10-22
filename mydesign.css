@@ -1,0 +1,125 @@
+    height:360px;
+    border-radius:50%;
+    background:radial-gradient(circle,#ff3b3010,transparent 65%);
+    z-index:25;
+    transform:translate(-50%,-50%)
+}
+
+@media(max-width:1100px) {
+    .nav-links {
+        gap:16px
+    }
+    .car-grid {
+        grid-template-columns:repeat(2,1fr)
+    }
+    .stats {
+        display:block
+    }
+    .stats-grid {
+        margin-top:40px
+    }
+}
+
+@media(max-width:700px) {
+    .nav {
+        height:70px;
+        padding:0 6%
+    }
+    .nav-cta {
+        display:none
+    }
+    .menu-btn {
+        display:block
+    }
+    .nav-links {
+        display:none;
+        position:absolute;
+        top:70px;
+        left:0;
+        right:0;
+        background:#0b0d0f;
+        flex-direction:column;
+        padding:30px 6%;
+        gap:25px
+    }
+    .nav-links.open {
+        display:flex
+    }
+    .hero {
+        min-height:700px
+    }
+    .hero-content {
+        padding:95px 6% 100px
+    }
+    .hero h1 {
+        font-size:clamp(82px,19vw,135px)
+    }
+    .hero-kicker {
+        margin-top:36px
+    }
+    .hero-desc {
+        font-size:13px
+    }
+    .hero-actions {
+        flex-wrap:wrap;
+        gap:20px
+    }
+    .hero-bottom {
+        left:6%;
+        right:6%;
+        bottom:22px
+    }
+    .hero-stat>span,.scroll-hint {
+        display:none
+    }
+    .section {
+        padding:85px 6%
+    }
+    .section-head {
+        display:block
+    }
+    .section-head h2,.stats h2,.experience h2,.closing h2 {
+        font-size:70px
+    }
+    .car-grid {
+        grid-template-columns:1fr
+    }
+    .car-image {
+        height:260px
+    }
+    .experience {
+        padding:85px 6%;
+        min-height:600px
+    }
+    .stats-grid {
+        gap:24px;
+        flex-wrap:wrap
+    }
+    .stats-grid strong {
+        font-size:54px
+    }
+    footer {
+        padding:40px 6%
+    }
+    .modal-image {
+        height:220px
+    }
+    .modal-body {
+        padding:22px
+    }
+    .modal-body h2 {
+        font-size:50px
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    *,*:before,*:after {
+        scroll-behavior:auto!important;
+        animation:none!important;
+        transition:none!important
+    }
+    .reveal {
+        opacity:1;
+        transform:none
+    }
+}
