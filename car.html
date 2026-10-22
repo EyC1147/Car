@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080a0c">
+
+    <title>VELOCITY — Beyond the Ordinary</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="glow"></div>
+
+    <!-- Navigation -->
+    <header class="nav" id="nav">
+
+        <a href="#home" class="brand">
+            V<span class="brand-slash">/</span>VELOCITY<span class="brand-dot">.</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+            <a href="#home" class="active">HOME</a>
+            <a href="#collection">THE COLLECTION</a>
+            <a href="#experience">EXPERIENCE</a>
+            <a href="#about">OUR STORY</a>
+        </nav>
+
+        <a href="#collection" class="nav-cta">
+            EXPLORE CARS <span>↗</span>
+        </a>
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="navLinks"
+            type="button"
+        >
+            ☰
+        </button>
+
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+
+            <div class="hero-bg" id="heroBg"></div>
+            <div class="hero-shade"></div>
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    <span class="red-line"></span>
+                    ENGINEERED FOR THE EXTRAORDINARY
+                    <span class="hero-index">01 / 04</span>
+                </div>
+
+                <p class="hero-kicker">
+                    INTRODUCING THE NEW ERA OF PERFORMANCE
+                </p>
+
+                <h1>
+                    CHASE<br>
+                    THE <em>LIMIT.</em>
+                </h1>
+
+                <p class="hero-desc">
+                    Machines that move you. Designs that define you.
+                    Discover the world's most exhilarating automobiles.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a class="btn btn-red" href="#collection">
+                        DISCOVER THE COLLECTION <span>↗</span>
+                    </a>
+
+                    <a class="play-link" href="#experience">
+                        <span class="play-circle">▶</span>
+                        THE EXPERIENCE
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Hero Bottom Controls -->
+            <div class="hero-bottom">
+
+                <div class="hero-stat">
+                    <strong>01<span>/</span>04</strong>
+                    <span>CURATED FOR THE FEARLESS</span>
+                </div>
+
+                <div class="scroll-hint">
+                    SCROLL TO EXPLORE <span>↓</span>
+                </div>
+
+                <div class="hero-arrows">
+
+                    <button
+                        id="prevHero"
+                        aria-label="Previous featured car"
+                        type="button"
+                    >
+                        ←
+                    </button>
+
+                    <button
+                        id="nextHero"
+                        aria-label="Next featured car"
+                        type="button"
+                    >
+                        →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Brand Ticker -->
+        <div class="ticker" aria-label="Brand values">
+
+            <div class="ticker-track">
+                PRECISION <span>✳</span>
+                PERFORMANCE <span>✳</span>
+                PASSION <span>✳</span>
+                NO COMPROMISE <span>✳</span>
+
+                PRECISION <span>✳</span>
+                PERFORMANCE <span>✳</span>
+                PASSION <span>✳</span>
+                NO COMPROMISE <span>✳</span>
+            </div>
+
+        </div>
+
+        <!-- Car Collection -->
+        <section class="collection section" id="collection">
+
+            <div class="section-head reveal">
+
+                <div>
+                    <div class="overline">01 — THE LINEUP</div>
+
+                    <h2>
+                        BUILT TO <em>THRILL.</em>
+                    </h2>
+                </div>
+
+                <p>
+                    Icons of speed. Masters of design.
+                    Find the machine that speaks your language.
+                </p>
+
+            </div>
+
+            <!-- Collection Filters -->
+            <div class="filters reveal" id="filters">
+
+                <button class="filter active" data-filter="all" type="button">
+                    ALL MACHINES <span>06</span>
+                </button>
+
+                <button class="filter" data-filter="supercar" type="button">
+                    SUPERCARS
+                </button>
+
+                <button class="filter" data-filter="grand-tourer" type="button">
+                    GRAND TOURERS
+                </button>
+
+                <button class="filter" data-filter="electric" type="button">
+                    ELECTRIC
+                </button>
+
+            </div>
+
+            <!-- Cars Loaded Through JavaScript -->
+            <div class="car-grid" id="carGrid"></div>
+
+            <p class="disclaimer">
+                Featured vehicles and specifications are illustrative.
+                Images are for editorial inspiration; this is a concept
+                showroom, not an authorized dealership.
+            </p>
+
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience" id="experience">
+
+            <div class="experience-image"></div>
+            <div class="experience-overlay"></div>
+
+            <div class="experience-inner reveal">
+
+                <div class="overline">
+                    02 — THE EXPERIENCE
+                </div>
+
+                <h2>
+                    NOT JUST A DRIVE.<br>
+                    <em>AN OBSESSION.</em>
+                </h2>
+
+                <p>
+                    That split second before the engine roars.
+                    The pulse as the road opens up.
+                    Some feelings aren't meant to be explained.
+                    They're meant to be driven.
+                </p>
+
+                <a href="#collection" class="btn btn-outline">
+                    FIND YOUR MACHINE <span>↗</span>
+                </a>
+
+            </div>
+
+            <div class="experience-number">
+                BEYOND<br>
+                LIMITS / 02
+            </div>
+
+        </section>
+
+        <!-- About / Philosophy Section -->
+        <section class="stats section" id="about">
+
+            <div class="stats-intro reveal">
+
+                <div class="overline">
+                    03 — OUR PHILOSOPHY
+                </div>
+
+                <h2>
+                    FOR THOSE WHO<br>
+                    <em>NEVER SETTLE.</em>
+                </h2>
+
+                <p>
+                    VELOCITY is an independent automotive concept
+                    celebrating the intersection of engineering,
+                    art, and adrenaline. Every detail matters.
+                    Every journey should mean something.
+                </p>
+
+            </div>
+
+            <!-- Statistics -->
+            <div class="stats-grid reveal">
+
+                <div>
+                    <strong>06<span>+</span></strong>
+                    <small>ICONIC MACHINES</small>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <small>PERFORMANCE CATEGORIES</small>
+                </div>
+
+                <div>
+                    <strong>∞</strong>
+                    <small>REASONS TO DRIVE</small>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Closing Section -->
+        <section class="closing">
+
+            <div class="closing-bg"></div>
+
+            <div class="closing-content reveal">
+
+                <div class="overline">
+                    YOUR NEXT CHAPTER STARTS HERE
+                </div>
+
+                <h2>
+                    THE ROAD<br>
+                    IS <em>YOURS.</em>
+                </h2>
+
+                <a href="#collection" class="btn btn-red">
+                    EXPLORE THE COLLECTION <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <a href="#home" class="brand">
+            V<span class="brand-slash">/</span>VELOCITY<span class="brand-dot">.</span>
+        </a>
+
+        <p>
+            DRIVE DIFFERENT. LIVE LIMITLESS.
+        </p>
+
+        <span>
+            © <span id="year"></span> VELOCITY. CONCEPT SHOWROOM.
+        </span>
+
+        <a href="#home">
+            BACK TO TOP ↑
+        </a>
+
+    </footer>
+
+    <!-- Car Details Modal -->
+    <dialog id="carModal" class="car-modal">
+
+        <button
+            class="modal-close"
+            id="closeModal"
+            aria-label="Close details"
+            type="button"
+        >
+            ✕
+        </button>
+
+        <div id="modalContent"></div>
+
+    </dialog>
+
+    <!-- External JavaScript -->
+    <script src="script.js" defer></script>
+
+</body>
+</html>
